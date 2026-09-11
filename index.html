@@ -2681,6 +2681,74 @@ footer p{
 
 </div>
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#05030a">
+
+<title>مملكة أريڤانيا | ARVANIA</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Cinzel:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ... خلي كل الستايل تبعك زي ما هو ... */
+
+/* =========================================================
+   اضافة جديدة: الصور والوصف للرتب العليا
+========================================================= */
+.rank-avatar{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--gold);
+    box-shadow: 0 0 18px rgba(215, 182, 106, 0.35);
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 2;
+}
+.emperor .rank-avatar{
+    width: 140px;
+    height: 140px;
+    border-width: 4px;
+}
+.rank-desc{
+    font-size: 11px;
+    color: var(--silver2);
+    margin-top: 10px;
+    line-height: 1.8;
+    max-width: 240px;
+}
+.deputy .rank-avatar, .lord .rank-avatar, .branch .rank-avatar{
+    width: 100px;
+    height: 100px;
+}
+
+/* ملخص المملكة */
+.story-section{
+    background: linear-gradient(180deg, rgba(7,3,13,.9), var(--black));
+    padding: 100px 6%;
+    text-align: center;
+    border-top: 1px solid var(--border);
+}
+.story-section p{
+    max-width: 900px;
+    margin: 20px auto 0;
+    color: var(--silver2);
+    font-size: 13px;
+    line-height: 2.4;
+}
+.story-section b{ color: var(--gold); }
+</style>
+</head>
+
+<body>
+
+<!-- ... كل الكود اللي فوق خليه زي ما هو ... -->
 
 <!-- =====================================================
      ROYAL HIERARCHY
@@ -2707,11 +2775,9 @@ footer p{
 
     </div>
 
-
     <div class="royal-stage reveal">
 
         <div class="royal-axis"></div>
-
 
         <!-- EMPEROR -->
 
@@ -2719,9 +2785,9 @@ footer p{
 
             <div class="emperor">
 
-                <div class="rank-symbol">
-                    ♛
-                </div>
+                <img src="https://cdn.photourl.com/free/2026-09-11-344f2e4a-626f-4492-9554-26399b0540e1.jpg" alt="شادو" class="rank-avatar">
+
+            
 
                 <div class="rank-label">
                     EMPEROR
@@ -2735,10 +2801,13 @@ footer p{
                     إمبراطور المملكة
                 </div>
 
+                <div class="rank-desc">
+                    هو المسؤول عن فتح النقابات وفتح الفروع وكل مايخص المملكة
+                </div>
+
             </div>
 
         </div>
-
 
         <!-- DEPUTIES -->
 
@@ -2746,9 +2815,9 @@ footer p{
 
             <div class="deputy">
 
-                <div class="rank-symbol">
-                    ◈
-                </div>
+                <img src="https://cdn.phototourl.com/free/2026-09-11-4cdfe200-8b66-4c0e-a41f-6ac813e5e428.jpg" alt="يوتا" class="rank-avatar">
+
+               
 
                 <div class="rank-label">
                     VICE EMPEROR
@@ -2762,14 +2831,17 @@ footer p{
                     نائب الإمبراطور
                 </div>
 
-            </div>
+                <div class="rank-desc">
+                    المسؤول عن ادارة المملكة
+                </div>
 
+            </div>
 
             <div class="deputy">
 
-                <div class="rank-symbol">
-                    ◇
-                </div>
+                <img src="https://cdn.photourl.com/free/2026-09-11-2be26ea5-bdc8-4130-b632-838702c26b85.jpg" alt="غوجو" class="rank-avatar">
+
+
 
                 <div class="rank-label">
                     VICE EMPEROR
@@ -2783,10 +2855,13 @@ footer p{
                     نائب الإمبراطور
                 </div>
 
+                <div class="rank-desc">
+                    النائب الاول للامبراطور هو المسؤول عن المملكة في غياب شادو
+                </div>
+
             </div>
 
         </div>
-
 
         <!-- LORD -->
 
@@ -2794,9 +2869,9 @@ footer p{
 
             <div class="lord">
 
-                <div class="rank-symbol">
-                    ♜
-                </div>
+                <img src="https://cdn.photourl.com/free/2026-09-11-2920f6af-8c37-4732-8f14-1ad5d6c5f1c2.jpg" alt="كانيكي" class="rank-avatar">
+
+
 
                 <div class="rank-label">
                     LORD
@@ -2810,16 +2885,21 @@ footer p{
                     لورد المملكة
                 </div>
 
+                <div class="rank-desc">
+                    هو المسؤول عن ادارة النقابات
+                </div>
+
             </div>
 
         </div>
-
 
         <!-- LORD OF BRANCHES -->
 
         <div class="branch">
 
             <div class="branch-line"></div>
+
+            <img src="https://cdn.phototourl.com/free/2026-09-11-9c7a4b51-9829-4903-8d0b-e44d3358f9d3.jpg" alt="ثورفين" class="rank-avatar">
 
             <div class="rank-label">
                 LORD OF BRANCHES
@@ -2833,13 +2913,40 @@ footer p{
                 لورد الفروع
             </div>
 
-        </div>
+            <div class="rank-desc">
+                هو المسؤول عن فتح الفروع أو اقفال الفروع
+            </div>
 
+        </div>
 
     </div>
 
 </section>
+   
 
+<!-- =====================================================
+     KINGDOM HISTORY
+===================================================== -->
+
+<section id="history" class="story-section reveal">
+    <div class="section-heading">
+        <div class="section-kicker">LEGACY</div>
+        <h2>مسيرة مملكة أريڤانيا</h2>
+        <div class="ornament"></div>
+    </div>
+
+    <p>
+        مملكة أريڤانيا تأسست بتاريخ <b>2025/9/1</b> على يد المؤس <b>لولوش</b>، الذي لعب دورًا بارزًا في تأسيس المملكة وتطورها، 
+        قبل أن يعتزل في بداية مسيرتها، ومن ثم ترقّى <b>شادو</b> إلى رتبة الإمبراطور وأكمل مسيرة أريڤانيا.
+        <br><br>
+        وقد عُرفت أريڤانيا بأنها من أقوى الممالك خلال الفترة من <b>2025/9/1 إلى 2026/9/4</b>، 
+        حيث وصلت إلى <b>71 نقابة مستقرة</b> في أقل من عام، كما سارت المملكة على نظام وقوانين ثابتة ومستقرة طوال عام كامل دون أي تغيير.
+        <br><br>
+        وخلال هذه الفترة نظمت العديد من البطولات التي عُرفت بقوتها وحماسها، وأصبحت من أبرز وأكثر البطولات حماسًا في عالم الممالك.
+        <br><br>
+        ورغم انتهاء مسيرة المملكة في <b>2026/9/4</b>، بقي اسم أريڤانيا شاهدًا على عام كامل من القوة والاستقرار والتنظيم.
+    </p>
+</section>
 
 <!-- =====================================================
      KINGS
@@ -2927,7 +3034,7 @@ footer p{
             </h3>
 
             <p>
-                ملك ويست
+                ملك الغرب
             </p>
 
         </div>
@@ -3184,7 +3291,7 @@ footer p{
             </h3>
 
             <p>
-                ساهم في تنظيم بطولات المملكة
+                ساهمت في تنظيم بطولات المملكة
                 وترتيب المنافسات وإخراجها
                 بصورة منظمة.
             </p>
@@ -3242,34 +3349,6 @@ footer p{
                 </p>
             </div>
 
-            <div class="retired-status">
-                RETIRED
-            </div>
-
-        </div>
-
-
-        <div class="retired">
-
-            <div class="retired-number">
-                02
-            </div>
-
-            <div>
-                <h3>
-                    يوتا ⚡
-                </h3>
-
-                <p>
-                    رايجن
-                </p>
-            </div>
-
-            <div class="retired-status">
-                RETIRED
-            </div>
-
-        </div>
 
 
         <div class="retired">
@@ -3287,6 +3366,7 @@ footer p{
                     لورد الفروع
                 </p>
             </div>
+            
 
             <div class="retired-status">
                 RETIRED
@@ -3307,7 +3387,7 @@ footer p{
                 </h3>
 
                 <p>
-                    مؤسس المملكة
+                     مؤسس المملكة
                 </p>
             </div>
 
